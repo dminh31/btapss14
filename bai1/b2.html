@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+       let number = []
+       let add;
+       for (let i = 0; i < 5; i++) {
+        do {
+               add = +prompt(`nhập số thứ ${i}`)
+           } while (number.includes(add));
+           number.push(add)
+       }
+       console.log(number);
+       let maxNumber=0
+       let index
+       for (let j = 0; j < number.length; j++) {
+            if (number[j]>maxNumber) {
+                maxNumber=number[j];
+                index=j
+            }
+       }
+       console.log(`giá trị lớn nhất là ${maxNumber} có vị trí là ${index}`);
+    </script>
+</body>
+
+</html>
